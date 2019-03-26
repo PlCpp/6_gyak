@@ -3,6 +3,7 @@
 
 #include <string>
 #include <sstream>
+#include <iostream>
 #include <ostream>
 
 class Student {
@@ -23,6 +24,7 @@ class Student {
 		}
 		
 		Student(const Student& other) {
+			std::cout << "Copy called\n";
 			*this = other;
 		}
 		
